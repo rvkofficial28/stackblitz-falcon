@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="section">
+      <img src="assets/images/Falcon-Logo.svg" alt="logo" class="-m-b-5" />
+  </div>
+  <div class="test-container">
+      <div *ngIf="rowData === null; else gridContainer" class="loader-container">
+          <div class="loader"><p>Loading data...</p></div>
+      </div>
+      <ng-template #gridContainer>
+          <ag-grid-angular
+              style="width: 100%; height: 100%; margin-right: 10px !important;"
+              [columnDefs]="columnDefs"
+              [rowData]="rowData"
+              [rowModelType]="rowModelType"
+              [class]="themeClass"
+              [sideBar]="sideBar"
+              [enableRangeSelection]="true"
+              [rowGroupPanelShow]="rowGroupPanelShow"
+              [pivotPanelShow]="'always'"
+              [autoGroupColumnDef]="autoGroupColumnDef"
+              (gridReady)="onGridReady($event)"
+              [defaultColDef]="defaultColDef"
+              [enableRangeSelection]="enableRangeSelection"
+              [enableCharts]="enableCharts"
+              [rowSelection]="rowSelection"
+              [suppressAggFuncInHeader]="suppressAggFuncInHeader"
+              [groupDefaultExpanded]="groupDefaultExpanded"
+              [statusBar]="statusBar"
+          ></ag-grid-angular>
+      </ng-template>
+  </div>
+</div>

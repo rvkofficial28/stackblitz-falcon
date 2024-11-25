@@ -1,0 +1,268 @@
+/*====== width css ======*/
+$i: 5;
+
+@while $i<=1000 {
+    .width-#{$i} {
+        width: #{$i}px;
+    }
+
+    $i: $i+5;
+}
+
+/*====== width css ends======*/
+/*====== Padding , Margin css starts ======*/
+$i: 0;
+
+@while $i<=100 {
+    .p {
+        &-#{$i} {
+            padding: #{$i}px !important;
+        }
+
+        &-t-#{$i} {
+            padding-top: #{$i}px !important;
+        }
+
+        &-b-#{$i} {
+            padding-bottom: #{$i}px !important;
+        }
+
+        &-l-#{$i} {
+            padding-left: #{$i}px !important;
+        }
+
+        &-r-#{$i} {
+            padding-right: #{$i}px !important;
+        }
+    }
+
+    .pad {
+        &-#{$i} {
+            padding: #{$i}px !important;
+        }
+
+        &-t-#{$i} {
+            padding-top: #{$i}px !important;
+        }
+
+        &-b-#{$i} {
+            padding-bottom: #{$i}px !important;
+        }
+
+        &-l-#{$i} {
+            padding-left: #{$i}px !important;
+        }
+
+        &-r-#{$i} {
+            padding-right: #{$i}px !important;
+        }
+    }
+
+    .m {
+        &-#{$i} {
+            margin: #{$i}px !important;
+        }
+
+        &-t-#{$i} {
+            margin-top: #{$i}px !important; 
+        }
+
+        &-b-#{$i} {
+            margin-bottom: #{$i}px !important;
+        }
+
+        &-l-#{$i} {
+            margin-left: #{$i}px !important;
+        }
+
+        &-r-#{$i} {
+            margin-right: #{$i}px !important;
+        }
+    }
+
+    .-m {
+        &-#{$i} {
+            margin: -#{$i}px !important;
+        }
+
+        &-t-#{$i} {
+            margin-top: -#{$i}px !important;
+        }
+
+        &-b-#{$i} {
+            margin-bottom: -#{$i}px !important;
+        }
+
+        &-l-#{$i} {
+            margin-left: -#{$i}px !important;
+        }
+
+        &-r-#{$i} {
+            margin-right: -#{$i}px !important;
+        }
+    }
+
+    .mar {
+        &-#{$i} {
+            margin: #{$i}px !important;
+        }
+
+        &-t-#{$i} {
+            margin-top: #{$i}px !important;
+        }
+
+        &-b-#{$i} {
+            margin-bottom: #{$i}px !important;
+        }
+
+        &-l-#{$i} {
+            margin-left: #{$i}px !important;
+        }
+
+        &-r-#{$i} {
+            margin-right: #{$i}px !important;
+        }
+    }
+
+    .-mar {
+        &-#{$i} {
+            margin: -#{$i}px !important;
+        }
+
+        &-t-#{$i} {
+            margin-top: -#{$i}px !important;
+        }
+
+        &-b-#{$i} {
+            margin-bottom: -#{$i}px !important;
+        }
+
+        &-l-#{$i} {
+            margin-left: -#{$i}px !important;
+        }
+
+        &-r-#{$i} {
+            margin-right: -#{$i}px !important;
+        }
+    }
+
+    $i: $i+1;
+}
+
+/*====== Padding , Margin css ends ======*/
+/*====== Display css starts ======*/
+.d {
+    &-none {
+        display: none;
+    }
+
+    &-inline-block {
+        display: inline-block;
+    }
+
+    &-inline-flex {
+        display: inline-flex;
+    }
+}
+
+/*====== display css ends ======*/
+/*====== Border-radius css starts ======*/
+$i: 0;
+
+@while $i<=10 {
+    .b-radius-#{$i} {
+        border-radius: #{$i}px;
+    }
+
+    $i: $i+5;
+}
+
+/*====== Border-radius css ends ======*/
+/*====== Font-size css starts ======*/
+$i: 10;
+
+@while $i<=80 {
+    .font-#{$i} {
+        font-size: #{$i}px !important;
+    }
+
+    $i: $i+1;
+}
+
+/*====== Font-size css ends ======*/
+/*====== Font-weight css starts ======*/
+$i: 100;
+
+@while $i<=900 {
+    .f-w-#{$i} {
+        font-weight: #{$i};
+    }
+
+    $i: $i+100;
+}
+
+/*====== Font-weight css ends ======*/
+
+.text {
+
+    /*====== Text-Transform css starts ======*/
+    &-capitalize {
+        text-transform: capitalize;
+    }
+
+    &-uppercase {
+        text-transform: uppercase;
+    }
+
+    &-lowercase {
+        text-transform: lowercase;
+    }
+
+    /*====== Text-Transform css ends ======*/
+    /*====== Text-Decoration css starts ======*/
+    &-overline {
+        text-decoration: overline;
+    }
+
+    &-line-through {
+        text-decoration: line-through;
+    }
+
+    &-underline {
+        text-decoration: underline;
+    }
+
+    /*====== Text-Decoration css ends ======*/
+}
+
+/*====== Vertical-Align css starts ======*/
+
+/*====== Vertical-Align css ends ======*/
+/*====== Position css starts ======*/
+.pos {
+    &-static {
+        position: static;
+    }
+
+    &-absolute {
+        position: absolute;
+    }
+
+    &-fixed {
+        position: fixed;
+    }
+
+    &-relative {
+        position: relative;
+    }
+
+    &-initial {
+        position: initial;
+    }
+
+    &-inherit {
+        position: inherit;
+    }
+}
+
+/*====== Position css ends ======*/
